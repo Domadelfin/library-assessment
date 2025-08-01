@@ -1,0 +1,34 @@
+import { Controller, Get, Post, Body, Patch, Param, Delete, ParseIntPipe } from '@nestjs/common';
+import { BooksService } from './books.service';
+import { UpdateBookDto } from './dto/update-books.dto';
+import { CreateBookDto } from './dto/create-books.dto';
+
+@Controller('books')
+export class BooksController {
+  constructor(private readonly booksService: BooksService) {}
+
+  @Post()
+  create(@Body() createbookDto: CreateBookDto) {
+    return this.booksService.create(createbookDto);
+  }
+
+  @Get()
+  findAll() {
+    return this.booksService.findAll();
+  }
+
+  @Get(':id')
+  findOne(@Param('id', ParseIntPipe) id: string) {
+    return this.booksService.findOne(+id);
+  }
+
+  @Patch(':id')
+  update(@Param('id', ParseIntPipe) id: string, @Body() updateBookDto: UpdateBookDto) {
+    return this.booksService.update(+id, updateBookDto);
+  }
+
+  @Delete(':id')
+  remove(@Param('id', ParseIntPipe) id: string) {
+    return this.booksService.remove(+id);
+  }
+}
