@@ -16,6 +16,7 @@ Validation: class-validator / class-transformer
 API Client: Postman
 
 🛠 Setup & Installation
+
 1. Clone the repository
 
 git clone https://github.com/Domadelfin/library-assessment.git
@@ -33,7 +34,7 @@ Update your .env file with the correct DATABASE_URL:
 env
 DATABASE_URL=postgresql://user:password@localhost:portnumber/database
 
-Replace user, password, portnumber, and <database> with your actual PostgreSQL config.
+Replace user, password, portnumber, and database with your actual PostgreSQL config.
 
 Then run:
 
@@ -64,6 +65,7 @@ POST /borrow-history – Log a borrow entry
 Use Postman or cURL to interact with the API.
 
 🚧 Features
+
 📖 Manage books and authors with relationships
 
 🔄 Track book copies and borrower status
