@@ -16,11 +16,15 @@ API Client: Postman
 
 🛠 Setup & Installation
 1. Clone the repository
+
 git clone https://github.com/Domadelfin/library-assessment.git
+
 cd library-assessment
 2. Install dependencies
+
 npm install
 3. Set up the database
+
 Update your .env file with the correct DATABASE_URL:
 
 env
