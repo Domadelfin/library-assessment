@@ -31,9 +31,9 @@ npm install
 Update your .env file with the correct DATABASE_URL:
 
 env
-DATABASE_URL=postgresql://<user>:<password>@localhost:<portnumber>/<database>
+DATABASE_URL=postgresql://user:password@localhost:portnumber/database
 
-Replace <user>, <password>, <portnumber>, and <database> with your actual PostgreSQL config.
+Replace user, password, portnumber, and <database> with your actual PostgreSQL config.
 
 Then run:
 
