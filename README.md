@@ -14,54 +14,6 @@ Validation: class-validator / class-transformer
 
 API Client: Postman
 
-Project Structure
-pgsql
-Copy
-Edit
-src/
-│
-├── author/
-│   ├── dto/
-│   │   ├── create-author.dto.ts
-│   │   └── update-author.dto.ts
-│   ├── author.controller.ts
-│   ├── author.service.ts
-│
-├── book/
-│   ├── dto/
-│   │   ├── create-books.dto.ts
-│   │   └── update-books.dto.ts
-│   ├── book.controller.ts
-│   ├── book.service.ts
-│
-├── book-copy/
-│   ├── dto/
-│   │   ├── create-book-copy.dto.ts
-│   │   └── update-book-copy.dto.ts
-│   ├── book-copy.controller.ts
-│   ├── book-copy.service.ts
-│
-├── borrow-history/
-│   ├── dto/
-│   │   ├── create-borrow-history.dto.ts
-│   │   └── update-borrow-history.dto.ts
-│   ├── borrow-history.controller.ts
-│   ├── borrow-history.service.ts
-│
-├── user/
-│   ├── dto/
-│   │   ├── create-user.dto.ts
-│   │   └── update-user.dto.ts
-│   ├── user.controller.ts
-│   ├── user.service.ts
-│
-├── database/
-│   └── database.service.ts
-│
-├── prisma/
-│   └── schema.prisma
-│
-└── main.ts
 🛠 Setup & Installation
 1. Clone the repository
 git clone https://github.com/Domadelfin/library-assessment.git
