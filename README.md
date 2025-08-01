@@ -4,6 +4,7 @@ Library Management System
 A backend application built with NestJS, Prisma, and PostgreSQL to manage books, authors, users, borrowing history, and book copies in a library system.
 
 Tech Stack
+
 Backend Framework: NestJS
 
 ORM: Prisma
@@ -20,23 +21,32 @@ API Client: Postman
 git clone https://github.com/Domadelfin/library-assessment.git
 
 cd library-assessment
+
 2. Install dependencies
 
 npm install
+
 3. Set up the database
 
 Update your .env file with the correct DATABASE_URL:
 
 env
 DATABASE_URL=postgresql://<user>:<password>@localhost:<portnumber>/<database>
+
 Replace <user>, <password>, <portnumber>, and <database> with your actual PostgreSQL config.
+
 Then run:
 
 npx prisma generate
+
 npx prisma migrate dev --name init
+
 4. Run the application
+
 npm run start:dev
+
 🔄 Example API Endpoints
+
 POST /books – Create a book
 
 PATCH /books/:id – Update book details
