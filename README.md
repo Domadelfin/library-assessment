@@ -1,5 +1,3 @@
-Sure! Here's a clean, general-purpose README.md file for your NestJS + Prisma Library Management System:
-
 Library Management System
 A backend application built with NestJS, Prisma, and PostgreSQL to manage books, authors, users, borrowing history, and book copies in a library system.
 
